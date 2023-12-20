@@ -60,6 +60,41 @@ h3{
 #arrow{
   transform: rotate(180deg);
   position: absolute;
-  right: 6rem;
-  bottom: 6rem;
+  right: 20px;
+  bottom: 120px;
 }
+
+@media (max-width: 700px) {
+  .first-section{
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-section > .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .second-section {
+    margin: 0!important;
+  }
+
+  .second-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .third-section{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .text, h1, h2, h3{
+    max-width: 350px!important;
+  }
+}
+

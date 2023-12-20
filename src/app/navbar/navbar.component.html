@@ -7,7 +7,31 @@
       <li>CONSULTORIAS</li>
       <li>RADIOS</li>
     </ul>
-    <img src="../../assets/icons/search.png" >
+    <img src="../../assets/icons/search.png" style="cursor: pointer;">
   </div>
+
+</div>
+<div style="z-index: 9; position: absolute;">
+  <div class="sidebar-opener sidebar" (click)="sidebarShow = !sidebarShow">
+    <span class="pi pi-bars" style="font-size: 32px; color: #00BAE8;"></span>
+  </div>
+
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+    <div
+        class="sidebar-close"
+        (click)="sidebarShow = !sidebarShow"
+    >
+      <span class="pi pi-times" style="font-size: 32px;"></span>
+    </div>
+	  <div class="sidebar-content">
+      <ul>
+        <li>DIVULGAÇÃO</li>
+        <li>GRAVADORAS</li>
+        <li>PARCERIAS</li>
+        <li>CONSULTORIAS</li>
+        <li>RADIOS</li>
+      </ul>
+	  </div>
+</div>
 
 </div>

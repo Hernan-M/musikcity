@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 
+
 import { AccordionModule } from 'primeng/accordion';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { AvatarModule } from 'primeng/avatar';
@@ -107,6 +108,7 @@ import { AppRoutingModule } from './app-routing.module';
     HeroComponent
   ],
   imports: [
+    SidebarModule,
     CarouselModule,
     AvatarModule,
     AvatarGroupModule,
