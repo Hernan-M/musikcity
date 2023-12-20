@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "musikcity:build:production"
+              "buildTarget": "musikcity:build:production"
             },
             "development": {
-              "browserTarget": "musikcity:build:development"
+              "buildTarget": "musikcity:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "musikcity:build"
+            "buildTarget": "musikcity:build"
           }
         },
         "test": {
@@ -89,7 +89,9 @@
             "styles": [
                 "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
                 "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
-                "src/styles.css"
+                "src/styles.css",
+                "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+                "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           }
